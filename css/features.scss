@@ -1,0 +1,80 @@
+//features
+.features {
+    background: #FFFFFF;
+    text-align: center;
+    padding-top: 103px;
+    padding-bottom: 27px;
+    position: relative;
+    h2 {
+        margin-bottom: 18px;
+    }
+    p {
+        max-width: 28.4rem;
+        margin: 0 auto;
+        font-size: 0.8rem;
+        margin-bottom: 62px;
+        line-height: 1.05rem;
+        font-family: 'Play';
+    }
+    &:before {
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 35px 17px 0 17px;
+        position: absolute;
+        bottom: -47px;
+        left: 7%;
+        border-color: #E01F3D transparent transparent transparent;
+        transform: rotate(33deg);
+        z-index: 9;
+    }
+}
+.features__list {
+    display: flex;
+    justify-content: space-between;
+    .features__item {
+        text-align: center;
+        max-width: 15.33rem;
+        h3 {
+            margin-bottom: 7px;
+        }
+        p {
+            font-size: 1rem;
+            color: #666666;
+            max-width: 15.38rem;
+            text-align: center;
+            margin: 0 auto;
+            line-height: 1.27rem;
+        }
+        &:nth-child(2) {
+            position: relative;
+            &:before {
+                position: absolute;
+                content: url(../img/cercles.png);
+                top: 20%;
+                left: 0;
+                transform: translateX(-50%);
+            }
+            &:after {
+                top: 20%;
+                right: 0;
+                transform: translateX(50%);
+                position: absolute;
+                content: url(../img/cercles.png);
+            }
+        }
+    }
+}
+.features__img {
+    width: 7.11rem;
+    height: 7.11rem;
+    background: #F2F5F4;
+    border-radius: 50%;
+    @include center_center;
+    margin:0 auto 24px;
+    svg {
+        width: 3.77rem;
+        height: 3.77rem;
+    }
+}

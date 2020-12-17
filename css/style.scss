@@ -1,0 +1,87 @@
+//normalize
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
+//layaout
+@import "layaout.scss";
+//Specification
+html {
+    font-size: 18px;
+}
+body {
+    font-family: 'Play', sans-serif;
+    color: #666666;
+    font-weight: 400;
+}
+$containerWidth: 55.83rem;
+.container {
+    max-width: $containerWidth;
+    margin: 0 auto;
+}
+// mixixns
+@mixin center_betw {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@mixin center_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+// fonts
+    h1, h2, h3, h4 {
+        color: #000;
+        font-weight: 700;
+    }
+    h1,h2,h4 {
+        text-transform: uppercase;
+    }
+    h1 {
+        font-size: 2.66rem;
+        line-height: 2.88rem;
+    }
+    h2 {
+        font-size: 2.66rem;
+    }
+    h3 {
+        font-size: 1.33rem;
+    }
+    h4 {
+        font-size: 1.33rem;
+    }
+    p {
+        font-size: 0.88rem;
+    }
+
+// color-map
+    $c_order: rgba(202, 27, 54, 1);
+    $c_grey: #F5F5F5;
+
+//breakpoints 
+    $tablets: 768px;
+    $phones: 480px;
+
+//sections
+    //header
+@import "main.scss";
+    //points
+@import "points.scss";
+    //btn
+@import "btn.scss";
+    //features
+@import "features.scss";
+    //feedback
+@import "feedback.scss";
+    //form
+@import "cta.scss";
+    //radio
+@import "radio.scss";
+    //map
+@import "map.scss";
+    //footer
+@import "footer.scss";
+    //networks
+@import "networks.scss";
+    //adaptive
+@import "media.scss";
+    //m-header
+@import "m-header.scss";

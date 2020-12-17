@@ -1,0 +1,24 @@
+.points {
+    display: flex;
+    justify-content: space-between;
+    .points__item {
+        max-width: 9.22rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        .points__text {
+            color: #000;
+            font-size: 0.88rem;
+            width: 6.33rem;
+            line-height: 1rem;
+            margin-left: 22px;
+            margin-bottom: 0;
+        }
+        .points__icon {
+            svg {
+                height: 2.27rem;
+                width: 2.27rem;
+            }
+        }
+    }
+}
