@@ -1,0 +1,85 @@
+//cta
+.cta {
+    background: #181818;
+    padding-top: 68px;
+    padding-bottom: 85px;
+    color: #fff;
+    h2 {
+        text-align: center;
+        margin-bottom: 61px;
+        color: #fff;
+    }
+}
+.cta__list {
+    display: flex;
+    justify-content: space-between;
+}
+.cta__left {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    max-width: 462px;
+    label {
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        margin-bottom: 14px;
+        &:first-child,&:nth-child(2) {
+            width: 48%;
+        }
+        &:nth-child(3) {
+            width: 100%;
+        }
+        &:nth-child(4), &:nth-child(5),  &:nth-child(6), &:last-child{
+            width: 22%;
+        }
+        input {
+            height: 58px;
+            padding-left: 11px;
+            border-radius: 5px;
+            border: 1px solid transparent;
+            outline: none;
+            &:hover, &:focus, &:active {
+                outline: none;
+                border-color: #E01F3D;
+            }
+        }
+    }
+}
+.cta__right {
+    width: 450px;
+    height: 152px;
+    border-radius: 10px;
+    label {
+        font-size: 16px;
+        textarea {
+            resize: none;
+            height: 152px;
+            padding-left: 11px;
+            width: 450px;
+            border-radius: 5px;
+            padding-left: 11px;
+            border: none;
+            outline: none;
+            margin-bottom: 38px;
+        }
+    }
+    label.comm {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+.form__controls {
+    display: flex;
+}
+.cta__btns {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    a {
+        color: #fff;
+    }
+}
