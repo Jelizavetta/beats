@@ -1,0 +1,29 @@
+.m-header {
+    display: none;
+}
+.m-header__list {
+    display: flex;
+}
+.burger {
+    display: block;
+    width: 1.625rem;
+    position: relative;
+    background: #000;
+    height: 0.25rem;
+    border-radius: 10px;
+    position: relative;
+    &::before, &::after{
+        content: '';
+        width: 100%;
+        position: absolute;
+        height: 0.25rem;
+        border-radius: 10px;
+        left: 0;
+    }
+    &::after{
+       top: 10px;
+    }
+    &::before {
+        top: -10px;
+    }
+}

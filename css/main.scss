@@ -10,8 +10,13 @@
     &:before {
         position: absolute;
         content: '';
+<<<<<<< HEAD
         width: 46.32px;
         height: 10.38px;
+=======
+        width: 2.573rem;
+        height: 0.576rem;
+>>>>>>> px_to_rem
         background: #C4C4C4;
         transform: rotate(-39deg);
         bottom: -7px;
@@ -20,19 +25,37 @@
     }
 }
 .header__logo {
+<<<<<<< HEAD
     width: 40px;
     height: 40px;
+=======
+    svg {
+        width: 2.22rem;
+        height: 2.22rem;
+    }
+>>>>>>> px_to_rem
     margin-right: 38px;
     &:hover {
         opacity: 0.6;
     }
 }
+<<<<<<< HEAD
 .header__link {
     img {
         margin-right: 6px;
     }
     color: #000;
     font-size: 18px;
+=======
+.phone__link {
+    svg {
+        width: 0.77rem;
+        height: 0.76rem;
+        margin-right: 6px;
+    }
+    color: #000;
+    font-size: 1rem;
+>>>>>>> px_to_rem
     font-weight: 400;
     &:hover {
         opacity: 0.6;
@@ -66,12 +89,20 @@
     padding-top: 50px;
     h1 {
         margin-bottom: 22px;
+<<<<<<< HEAD
         max-width: 400px;
+=======
+        max-width: 22.22rem;
+>>>>>>> px_to_rem
         color: #000;
     }
     p {
         color: #000;
+<<<<<<< HEAD
         max-width: 332px;
+=======
+        max-width: 18.44rem;
+>>>>>>> px_to_rem
         margin-bottom: 36px;
     }
     a {
@@ -80,6 +111,10 @@
 }
 .offer__img {
     width: 47%;
+<<<<<<< HEAD
+=======
+    height: 100%;
+>>>>>>> px_to_rem
     img {
         border-radius: 50%;
     }

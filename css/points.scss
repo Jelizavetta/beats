@@ -2,21 +2,38 @@
     display: flex;
     justify-content: space-between;
     .points__item {
+<<<<<<< HEAD
         max-width: 166px;
+=======
+        max-width: 9.22rem;
+>>>>>>> px_to_rem
         display: flex;
         align-items: center;
         justify-content: space-evenly;
         .points__text {
             color: #000;
+<<<<<<< HEAD
             font-size: 16px;
             width: 114px;
             line-height: 18px;
+=======
+            font-size: 0.88rem;
+            width: 6.33rem;
+            line-height: 1rem;
+>>>>>>> px_to_rem
             margin-left: 22px;
             margin-bottom: 0;
         }
         .points__icon {
+<<<<<<< HEAD
             height: 41px;
             width: 41px;
+=======
+            svg {
+                height: 2.27rem;
+                width: 2.27rem;
+            }
+>>>>>>> px_to_rem
         }
     }
 }
