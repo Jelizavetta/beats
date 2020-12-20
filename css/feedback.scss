@@ -60,13 +60,8 @@
     }
 }
 .feedback__img {
-<<<<<<< HEAD
-    width: 264px;
-    height: 253px;
-=======
     width: 14.6rem;
     height: 14.05rem;
->>>>>>> px_to_rem
     margin-right: 40px;
 }
 .feedback__text {
@@ -75,22 +70,13 @@
         margin-bottom: 24px;
     }
     p {
-<<<<<<< HEAD
-        max-width: 455px;
-        line-height: 18px;
-=======
         max-width: 25.27rem;
         line-height: 0.8rem;
->>>>>>> px_to_rem
         font-size: 16px;
         margin-bottom: 38px;
     }
     p.feedback__name {
-<<<<<<< HEAD
-        font-size: 18px;
-=======
         font-size: 1rem;
->>>>>>> px_to_rem
         font-weight: 700;
         color: #000;
     }
@@ -100,13 +86,8 @@
     @include center_center;
     .feedback__item {
         margin-right: 6px;
-<<<<<<< HEAD
-        width: 74px;
-        height: 74px;
-=======
         width: 4.11rem;
         height: 4.11rem;
->>>>>>> px_to_rem
         border-radius: 50%;
         border: 4px solid transparent;
         &:hover, &:active {

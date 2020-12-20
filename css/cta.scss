@@ -2,11 +2,7 @@
 .cta {
     background: #181818;
     padding-top: 68px;
-<<<<<<< HEAD
-    padding-bottom: 85px;
-=======
     padding-bottom: 168px;
->>>>>>> px_to_rem
     color: #fff;
     h2 {
         text-align: center;
@@ -22,15 +18,9 @@
     flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
-<<<<<<< HEAD
-    max-width: 462px;
-    label {
-        font-size: 16px;
-=======
     max-width: 25.66rem;
     label {
         font-size: 0.8rem;
->>>>>>> px_to_rem
         display: flex;
         flex-direction: column;
         color: #fff;
@@ -45,11 +35,7 @@
             width: 22%;
         }
         input {
-<<<<<<< HEAD
-            height: 58px;
-=======
             height: 3.22rem;
->>>>>>> px_to_rem
             padding-left: 11px;
             border-radius: 5px;
             border: 1px solid transparent;
@@ -62,23 +48,6 @@
     }
 }
 .cta__right {
-<<<<<<< HEAD
-    width: 450px;
-    height: 152px;
-    border-radius: 10px;
-    label {
-        font-size: 16px;
-        textarea {
-            resize: none;
-            height: 152px;
-            padding-left: 11px;
-            width: 450px;
-            border-radius: 5px;
-            padding-left: 11px;
-            border: none;
-            outline: none;
-            margin-bottom: 38px;
-=======
     width: 25rem;
     height: 8.44rem;
     border-radius: 10px;
@@ -99,7 +68,6 @@
         &:hover, &:focus, &:active {
             outline: none;
             border-color: #E01F3D;
->>>>>>> px_to_rem
         }
     }
     label.comm {
@@ -116,12 +84,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-<<<<<<< HEAD
-    a {
-        color: #fff;
-    }
-}
-=======
     width: 63%;
     a {
         color: #fff;
@@ -130,4 +92,3 @@
         }
     }
 }
->>>>>>> px_to_rem
