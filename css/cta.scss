@@ -4,27 +4,51 @@
     padding-top: 68px;
     padding-bottom: 168px;
     color: #fff;
+    @include tablets {
+        padding-top: 148px;
+        padding-bottom: 331px;
+    }
+    @include phones {
+        padding-top: 63px;
+        padding-bottom: 226px;
+    }
     h2 {
         text-align: center;
         margin-bottom: 61px;
         color: #fff;
+        @include tablets {
+            margin-bottom: 30px;
+        }
+        @include phones {
+            margin-bottom: 49px;
+        }
     }
 }
 .cta__list {
     display: flex;
     justify-content: space-between;
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 .cta__left {
     flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
-    max-width: 25.66rem;
+    max-width: 48%;
+    @include tablets {
+        max-width: 27.66rem;
+    }
     label {
         font-size: 0.8rem;
         display: flex;
         flex-direction: column;
         color: #fff;
         margin-bottom: 14px;
+        @include tablets {
+            margin-bottom: 22px;
+        }
         &:first-child,&:nth-child(2) {
             width: 48%;
         }
@@ -40,6 +64,9 @@
             border-radius: 5px;
             border: 1px solid transparent;
             outline: none;
+            @include tablets {
+                height: 2.02rem;
+            }
             &:hover, &:focus, &:active {
                 outline: none;
                 border-color: #E01F3D;
@@ -48,22 +75,31 @@
     }
 }
 .cta__right {
-    width: 25rem;
+    max-width: 48%;
     height: 8.44rem;
     border-radius: 10px;
+    width: 100%;
+    @include tablets {
+        max-width: 27.7rem;
+    }
     label {
         font-size: 0.8rem;
         textarea {
             resize: none;
             height: 8.44rem;
             padding-top: 11px;
-            width: 25rem;
+            width: 100%;
             border-radius: 5px;
             border: none;
             padding-left: 11px;
             outline: none;
             margin-bottom: 38px;
             box-sizing: border-box;
+            @include tablets {
+                height: 4.84rem;
+                width: 100%;
+                margin-bottom: 26px;
+            }
         }
         &:hover, &:focus, &:active {
             outline: none;
@@ -78,6 +114,10 @@
 }
 .form__controls {
     display: flex;
+    @include phones {
+        justify-content: center;
+        align-items: center;
+    }
 }
 .cta__btns {
     margin-top: 25px;
@@ -85,10 +125,23 @@
     align-items: center;
     justify-content: space-between;
     width: 63%;
+    @include tablets {
+        margin: 44px auto 0;
+    }
+    @include phones {
+        width: 100%;
+        margin-top: 21px;
+    }
     a {
         color: #fff;
         &:hover {
             color: #E01F3D;
+        }
+        @include phones {
+            color: #E01F3D;
+        &:hover {
+            color: #fff;
+        }
         }
     }
 }

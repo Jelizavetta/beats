@@ -1,6 +1,9 @@
 .points {
     display: flex;
     justify-content: space-between;
+    @include tablets {
+        display: none;
+    }
     .points__item {
         max-width: 9.22rem;
         display: flex;

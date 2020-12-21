@@ -1,20 +1,23 @@
 /*
-Error: Undefined mixin 'phones'.
-        on line 3 of /Users/VaryaChashina/Desktop/Beats/css/map.scss, in `phones'
-        from line 3 of /Users/VaryaChashina/Desktop/Beats/css/map.scss
+Error: Undefined mixin 'tablets'.
+        on line 35 of /Users/VaryaChashina/Desktop/Beats/css/feedback.scss, in `tablets'
+        from line 35 of /Users/VaryaChashina/Desktop/Beats/css/feedback.scss
 
-1: .map {
-2:     position: relative;
-3:     @include phones {
-4:         padding-bottom: 148px;
-5:     }
-6:     img {
-7:         width: 100%;
-8:     }
+30:     background: #F8FAF9;
+31:     position: relative;
+32:     display: flex;
+33:     justify-content: flex-start;
+34:     margin-bottom: 15px;
+35:     @include tablets {
+36:         flex-direction: column;
+37:         align-items: center;
+38:         text-align: center;
+39:         padding-top: 55px;
+40:     }
 
 Backtrace:
-/Users/VaryaChashina/Desktop/Beats/css/map.scss:3:in `phones'
-/Users/VaryaChashina/Desktop/Beats/css/map.scss:3
+/Users/VaryaChashina/Desktop/Beats/css/feedback.scss:35:in `tablets'
+/Users/VaryaChashina/Desktop/Beats/css/feedback.scss:35
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -63,4 +66,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'phones'.\A         on line 3 of /Users/VaryaChashina/Desktop/Beats/css/map.scss, in `phones'\A         from line 3 of /Users/VaryaChashina/Desktop/Beats/css/map.scss\A \A 1: .map {\A 2:     position: relative;\A 3:     @include phones {\A 4:         padding-bottom: 148px;\A 5:     }\A 6:     img {\A 7:         width: 100%;\A 8:     }"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 35 of /Users/VaryaChashina/Desktop/Beats/css/feedback.scss, in `tablets'\A         from line 35 of /Users/VaryaChashina/Desktop/Beats/css/feedback.scss\A \A 30:     background: #F8FAF9;\A 31:     position: relative;\A 32:     display: flex;\A 33:     justify-content: flex-start;\A 34:     margin-bottom: 15px;\A 35:     @include tablets {\A 36:         flex-direction: column;\A 37:         align-items: center;\A 38:         text-align: center;\A 39:         padding-top: 55px;\A 40:     }"; }

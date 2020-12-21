@@ -1,20 +1,20 @@
 /*
 Error: Undefined mixin 'phones'.
-        on line 3 of /Users/VaryaChashina/Desktop/Beats/css/map.scss, in `phones'
-        from line 3 of /Users/VaryaChashina/Desktop/Beats/css/map.scss
+        on line 3 of /Users/VaryaChashina/Desktop/Beats/css/networks.scss, in `phones'
+        from line 3 of /Users/VaryaChashina/Desktop/Beats/css/networks.scss
 
-1: .map {
-2:     position: relative;
+1: .networks {
+2:     display: flex;
 3:     @include phones {
-4:         padding-bottom: 148px;
+4:         margin-top: 0.89rem;
 5:     }
-6:     img {
-7:         width: 100%;
-8:     }
+6: }
+7: .networks__item {
+8:     margin-right: 10px;
 
 Backtrace:
-/Users/VaryaChashina/Desktop/Beats/css/map.scss:3:in `phones'
-/Users/VaryaChashina/Desktop/Beats/css/map.scss:3
+/Users/VaryaChashina/Desktop/Beats/css/networks.scss:3:in `phones'
+/Users/VaryaChashina/Desktop/Beats/css/networks.scss:3
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -63,4 +63,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'phones'.\A         on line 3 of /Users/VaryaChashina/Desktop/Beats/css/map.scss, in `phones'\A         from line 3 of /Users/VaryaChashina/Desktop/Beats/css/map.scss\A \A 1: .map {\A 2:     position: relative;\A 3:     @include phones {\A 4:         padding-bottom: 148px;\A 5:     }\A 6:     img {\A 7:         width: 100%;\A 8:     }"; }
+  content: "Error: Undefined mixin 'phones'.\A         on line 3 of /Users/VaryaChashina/Desktop/Beats/css/networks.scss, in `phones'\A         from line 3 of /Users/VaryaChashina/Desktop/Beats/css/networks.scss\A \A 1: .networks {\A 2:     display: flex;\A 3:     @include phones {\A 4:         margin-top: 0.89rem;\A 5:     }\A 6: }\A 7: .networks__item {\A 8:     margin-right: 10px;"; }

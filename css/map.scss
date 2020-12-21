@@ -1,5 +1,8 @@
 .map {
     position: relative;
+    @include phones {
+        padding-bottom: 148px;
+    }
     img {
         width: 100%;
     }

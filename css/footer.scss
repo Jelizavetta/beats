@@ -11,10 +11,34 @@
 .footer__list {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    @include phones {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 .footer__item {
     p {
         color: #000;
         margin-bottom: 4px;
+        @include phones {
+            font-size: 1rem;
+            letter-spacing: 0.03em;
+            margin-bottom: 0.8rem;
+        }
+    }
+}
+.footer__phone_link {
+    @include tablets {
+        color: $c_order;
+        .icon_phone {
+            fill: $c_order;
+        }
+    }
+    @include phones {
+        color: #000;
+        .icon_phone {
+            fill: #000;
+        }
     }
 }

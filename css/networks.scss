@@ -1,5 +1,8 @@
 .networks {
     display: flex;
+    @include phones {
+        margin-top: 0.89rem;
+    }
 }
 .networks__item {
     margin-right: 10px;

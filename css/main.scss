@@ -4,8 +4,19 @@
     padding-bottom: 52px;
     background-color: $c_grey;
     position: relative;
+    @include tablets {
+        padding-bottom: 106px;
+    }
+    @include phones {
+        padding-bottom: 0px;
+    }
     .header__list {
-        @include center_betw;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        @include tablets {
+            align-items: center;
+        }
     }
     &:before {
         position: absolute;
@@ -20,38 +31,48 @@
     }
 }
 .header__logo {
+    margin-right: 38px;
     svg {
         width: 2.22rem;
         height: 2.22rem;
     }
-    margin-right: 38px;
     &:hover {
         opacity: 0.6;
     }
 }
-.phone__link {
+.phone_link {
     svg {
         width: 0.77rem;
         height: 0.76rem;
         margin-right: 6px;
     }
+    text-align: center;
     color: #000;
     font-size: 1rem;
     font-weight: 400;
+    white-space: nowrap;
     &:hover {
         opacity: 0.6;
     }
 }
+.header__phone_link {
+    padding-top: 13px;
+    margin-left: 46px;
+    @include tablets {
+        display: none;
+    }
+}
 .menu {
-    margin-right: 46px;
-    .menu__list {
-        @include center_betw;
+    padding-top: 13px;
+    .menu__list {     
+        margin-right: -27px;   
+        @include center_center;
+        flex-wrap: wrap;
         li {
             margin-right: 27px;
-            &:last-child {
-                margin-right: 0;
-            }
+            margin-bottom: 10px;
             a {
+                white-space: nowrap;
                 font-family: "Alegreya Sans", sans-serif;
                 color: #000;
                 &:hover {
@@ -60,32 +81,74 @@
             }
         }
     }
+    @include tablets {
+        display: none;
+    }
 }
 .offer {
     margin-top: 47px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    @include tablets {
+        flex-direction: column-reverse;
+        text-align: center;
+        margin-top: 130px;
+    }
+    @include phones {
+        margin-top: 40px;
+    }
 }
 .offer__text {
     padding-top: 50px;
+    max-width: 22.22rem;
+    @include tablets {
+        padding-top: 35px;
+        letter-spacing: 0.1em;
+        max-width: 88%;
+        margin: 0 auto;
+    }
+    @include phones {
+        max-width: 81%;
+    }
     h1 {
         margin-bottom: 22px;
-        max-width: 22.22rem;
         color: #000;
+        @include tablets {
+            margin-bottom: 14px;
+        }
+        @include phones {
+            margin-bottom: 21px;
+        }
     }
     p {
         color: #000;
         max-width: 18.44rem;
         margin-bottom: 36px;
+        @include tablets {
+            max-width: 23.44rem;
+            font-size: 1.03rem;
+            margin: 10px auto 32px;
+        }
+        @include phones {
+            margin-bottom: 26px;
+        }
     }
     a {
         margin-bottom: 70px;
     }
 }
 .offer__img {
-    width: 47%;
+    width: 22em;
     height: 100%;
+    @include tablets {
+        width: 19em;
+    }
+    @include phones {
+        width: 17em;
+    }
     img {
+        width: 100%;
         border-radius: 50%;
     }
 }
